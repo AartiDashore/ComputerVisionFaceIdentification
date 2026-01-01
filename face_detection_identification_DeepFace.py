@@ -40,8 +40,8 @@ while True:
             cached_results = DeepFace.analyze(
                 img_path=rgb_frame,
                 actions=['age', 'gender', 'emotion', 'race'],
-                detector_backend='mtcnn',   # ✅ reliable on CPU
-                enforce_detection=False,    # ✅ no silent failure
+                detector_backend='mtcnn',   # reliable on CPU
+                enforce_detection=False,    # no silent failure
             )
 
             r = cached_results[0]
@@ -91,3 +91,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
