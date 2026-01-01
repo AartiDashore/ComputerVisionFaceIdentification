@@ -138,7 +138,7 @@ The alpha branch refines the real-time face analysis pipeline with enhanced dete
 
 ```bash
 git checkout alpha
-python face_analysis.py
+python face_detection_identification1.py
 ```
 
 ### Notes
