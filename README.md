@@ -54,7 +54,7 @@ pip install opencv-python deepface
 Run the application with:
 
 ```bash
-python face_analysis.py
+python face_detection_identification.py
 ```
 
 ## Configuration
