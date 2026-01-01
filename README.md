@@ -37,8 +37,8 @@ This project is a real-time face analysis application built using **Python**, **
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/AartiDashore/ComputerVisionFaceIdentification.git)
+cd ComputerVisionFaceIdentification
 ```
 
 ### 2. Install Dependencies
@@ -88,6 +88,60 @@ ANALYZE_EVERY_N_FRAMES = 30
 
 This project is intended for educational and experimental purposes only.
 Facial analysis results should not be used for identification, profiling, or decision-making in sensitive contexts.
+
+---
+## Alpha Branch (Experimental DeepFace Update)
+
+An experimental update is available in the **`alpha` branch**, introducing improvements to stability, accuracy, and output consistency while continuing to use **DeepFace** for facial analysis.
+
+### Overview
+
+The alpha branch refines the real-time face analysis pipeline with enhanced detection reliability and temporal smoothing. These changes are intended for testing and evaluation before being merged into the main branch.
+
+### Key Improvements
+
+* **More reliable face detection backend**
+
+  * Uses the `mtcnn` detector backend for improved accuracy on CPU-based systems
+* **Temporal smoothing of predictions**
+
+  * Applies a rolling window to stabilize age, gender, emotion, and race predictions across frames
+* **Reduced prediction flicker**
+
+  * Aggregates recent results instead of displaying single-frame predictions
+* **Improved robustness**
+
+  * Prevents silent detection failures and logs DeepFace errors explicitly
+* **Resizable display window**
+
+  * Uses a normal OpenCV window mode for better usability across screen sizes
+
+### Technical Changes
+
+* Introduction of rolling history buffers using `collections.deque`
+* Smoothed outputs computed via averaging (age) and majority voting (gender, emotion, race)
+* Retains frame-skipping strategy to maintain performance
+* No changes to the core user interaction model or controls
+
+### Branch Status
+
+* **Branch name:** `alpha`
+* **Stability:** Experimental
+* **Recommended use:** Testing, benchmarking, and feedback
+* **Not yet merged into:** `main`
+
+### How to Use the Alpha Version
+
+```bash
+git checkout alpha
+python face_analysis.py
+```
+
+### Notes
+
+* Results may differ from the main branch due to smoothing and backend changes
+* Performance depends on system hardware and camera quality
+* This branch is subject to change and may introduce breaking updates
 
 ## License
 
