@@ -28,8 +28,8 @@ This project is a real-time face analysis application built using **Python**, **
 
 ```
 .
-├── face_analysis.py
-└── README.md
+├── face_detection_identification.py
+└── haarcascade_frontalface_default.xml
 ```
 
 ## Installation
