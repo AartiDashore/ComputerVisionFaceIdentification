@@ -37,7 +37,7 @@ This project is a real-time face analysis application built using **Python**, **
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/AartiDashore/ComputerVisionFaceIdentification.git)
+git clone https://github.com/AartiDashore/ComputerVisionFaceIdentification.git
 cd ComputerVisionFaceIdentification
 ```
 
