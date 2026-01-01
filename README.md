@@ -77,6 +77,10 @@ ANALYZE_EVERY_N_FRAMES = 30
 5. Draws bounding boxes and facial attributes on the video stream
 6. Displays the processed video in real time
 
+## Output
+[<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c3de9854-9b38-46cd-9d49-cf51180ee09c" />](https://github.com/AartiDashore/ComputerVisionFaceIdentification/blob/alpha/Output/3.png)
+
+
 ## Notes and Limitations
 
 * Adequate lighting significantly improves accuracy
